@@ -1,0 +1,228 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Zachary}{Weeden}{ 3 Schell Pl. Rochester, NY 14608 \\
+\href{mailto:zdw7287@rit.edu}{zdw7287@rit.edu} | 978.424.1345}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Rochester Institute}\subsection{of Technology}
+\descript{BS in Computer Engineering Technology}
+\location{Expected May 2018 | Rochester, NY \\ Accolades: Dean's List Spring 2016}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Personal Website: \href{https://people.rit.edu/zdw7287}{\custombold{https://people.rit.edu/zdw7287}} \\
+Github: \\ \href{https://github.com/zweed4u}{\custombold{https://github.com/zweed4u}} \\
+LinkedIn:\\  \href{www.linkedin.com/in/zweeden}{\custombold{www.linkedin.com/in/zweeden}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+DC/AC Circuits \textbullet{} Electronics I \& II \\
+Microcontroller Systems \\
+O-O Programming \textbullet{} Data Strcutures \\
+Computational Problem Solving \\
+Computer Science Theory \\
+Digital Fundamentals \& System Design\\
+Networking Technologies\\
+Digital Signal Processing\\
+Hardware Description Language\\
+Embedded Systems Design
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Python \textbullet{} Shell \textbullet{} JavaScript \textbullet{} Matlab \\
+PHP \textbullet{} VHDL \textbullet{} Perl \textbullet{} \LaTeX\ \textbullet{} HTML \textbullet{} C++
+\sectionsep
+
+\subsection{Software}
+Eclipse \textbullet{} Visual Studio \textbullet{} PyCharm \textbullet{} IDLE \\ Microsoft Office (72 WPM) \textbullet{} notePad++ \\ Sublime \textbullet{} Vi/Vim \textbullet{} Selenium \textbullet{} openQa \\ MiniTab \textbullet{} Altera Quartus II \textbullet{} ModelSim \\ MultiSim \textbullet{} Linux/Windows/Mac OS \textbullet{} Git \\ Unix Tools \& Scripting
+\sectionsep
+
+\subsection{Equipment}
+Digital Multimeter \textbullet{} Function Generator \\ 
+Cyclone FPGA \textbullet{} Oscilloscope \textbullet{} Soldering \\ Raspberry Pi \textbullet{} Arduino Uno \textbullet{}
+Protoboard
+\sectionsep
+
+\subsection{Extracurriculars}
+2011 Varsity Baseball \textbullet{} RIT Tigers Men's Intercollegiate Varsity Baseball Team 
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Datto Inc.}
+\descript{| Software Quality Assurance Intern \\ Automation Infrastructure }
+\location{May 2016 – Dec 2016 (8 months) | Norwalk, CT \& Rochester, NY}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Manually tested front end and functionality of SaaS product
+\item Wrote smoke tests in perl with openQA for automated testing
+%\item Updated deprecated git web project to support puppet integration for DLAMPs
+\item Wrote code to reset database instances that was integrated in framework 
+\item Wrote automated regression tests using our team's testing framework
+\item Wrapped API endpoints in framework that were used in automated tests 
+\item Wrote validity tests for each endpoint to ensure proper jsonrpc response
+\item Completed tasks within sprints using agile development methods
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Self-Employed}
+\descript{| Reseller}
+\location{Sept 2011 – Present | Rochester, NY \& Middleton, MA}
+\begin{tightemize}
+\item Make use of my coding ability to exploit online retailers’ checkout process to
+ensure purchase of limited sneakers which are then sold for profit on eBay
+\item Methods include webcrawling, network analysis and use of various APIs
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{QA Git Web Tool}
+\descript{| Datto Inc. Intern}
+\location{Aug 2016 – Sept 2016 | Norwalk, CT \& Rochester, NY}
+Deployed on a DLAMP device, a PHP webpage would allow a user to specify a repo and PR number to update or reset to master. The web handler would then validate the selection and resolve the proper path of the project and pass parameters to a shell script. The shell script would then make the proper git command to pull the repo and version onto the device for further use.
+\sectionsep
+
+\runsubsection{Email Notifier}
+\descript{| Datto Inc. Intern}
+\location{June 2016 | Norwalk, CT}
+Using a Raspberry Pi, a third party led beacon and a python script, the filtered folder
+of an inbox was monitored for new, unread emails. On detection of a new message a
+signal was sent to a designated pin on the Raspberry Pi and fed through an active low
+relay which turned on the led. A second filtered folder was monitored for disabling
+the led. The sender and time of this ”All Clear” email was logged.
+\sectionsep
+
+\runsubsection{Sitemap Page Monitor}
+\descript{| Personal}
+\location{Sept 2015 – Present | Rochester, NY}
+Polling of a sitemap XML to determine when pages are added to a website. Includes twitter
+post integration. Exclusively used on webshops
+that use the Shopify eCommerce platform. Newly added pages’ jsons are
+parsed for detailed information.
+\sectionsep
+
+\runsubsection{SnapSave}
+\descript{| Personal}
+\location{May 2015 – Present | Rochester, NY \& Norwalk, CT \& Middleton, MA}
+With the aid of an SSL kill switch and mitmproxy, SnapSave allows for the viewing and
+downloading of a snap on a users desktop without voiding the expiration of the post
+or notifying the senderthat their post has been viewed.
+\sectionsep
+
+\runsubsection{5nkr5}
+\descript{| Personal}
+\location{May 2015 – Present | Rochester, NY}
+Reverse engineering of the SNKRS iOS app distributed by Nike with a mitmproxy
+allowed for use of mobile app exclusive API endpoints for desktop users. Detailed
+product information was also able to be gathered from various endpoints. Crucial in
+that purchases on the app were given precendece over desktop purchases.
+\sectionsep
+\end{minipage} 
+\end{document}  \documentclass[]{article}
